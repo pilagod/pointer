@@ -16,27 +16,27 @@ func New(value interface{}) interface{} {
 	return rp.Interface()
 }
 
-// NewString converts string to pointer
-func NewString(value string) *string {
+// String converts string to pointer
+func String(value string) *string {
 	return New(value).(*string)
 }
 
-// NewInt converts int to pointer
-func NewInt(value int) *int {
+// Int converts int to pointer
+func Int(value int) *int {
 	return New(value).(*int)
 }
 
-// NewUint converts uint to pointer
-func NewUint(value uint) *uint {
+// Uint converts uint to pointer
+func Uint(value uint) *uint {
 	return New(value).(*uint)
 }
 
-// NewFloat converts float to pointer
-func NewFloat(value float64) *float64 {
+// Float converts float to pointer
+func Float(value float64) *float64 {
 	return New(value).(*float64)
 }
 
-// NewTime converts time to pointer
-func NewTime(value time.Time) *time.Time {
+// Time converts time to pointer
+func Time(value time.Time) *time.Time {
 	return New(value).(*time.Time)
 }

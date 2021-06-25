@@ -19,35 +19,35 @@ func (s *pointerSuite) TestNewString() {
 	value := "hello"
 
 	s.Equal(&value, New(value).(*string))
-	s.Equal(&value, NewString(value))
+	s.Equal(&value, String(value))
 }
 
 func (s *pointerSuite) TestNewInt() {
 	value := 123
 
 	s.Equal(&value, New(value).(*int))
-	s.Equal(&value, NewInt(value))
+	s.Equal(&value, Int(value))
 }
 
 func (s *pointerSuite) TestNewUint() {
 	value := uint(123)
 
 	s.Equal(&value, New(value).(*uint))
-	s.Equal(&value, NewUint(value))
+	s.Equal(&value, Uint(value))
 }
 
 func (s *pointerSuite) TestNewFloat() {
 	value := 123.45
 
 	s.Equal(&value, New(value).(*float64))
-	s.Equal(&value, NewFloat(value))
+	s.Equal(&value, Float(value))
 }
 
 func (s *pointerSuite) TestNewTime() {
 	value := time.Now()
 
 	s.Equal(&value, New(value).(*time.Time))
-	s.Equal(&value, NewTime(value))
+	s.Equal(&value, Time(value))
 }
 
 func (s *pointerSuite) TestNewStruct() {
