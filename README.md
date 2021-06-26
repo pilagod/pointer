@@ -1,4 +1,4 @@
-# pointer
+# pointer [![Build Status](https://travis-ci.com/pilagod/pointer.svg?branch=master)](https://travis-ci.com/pilagod/pointer) [![Coverage Status](https://coveralls.io/repos/github/pilagod/pointer/badge.svg?branch=master)](https://coveralls.io/github/pilagod/pointer?branch=master)
 
 Pointer utils for Golang
 
