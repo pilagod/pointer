@@ -1,0 +1,15 @@
+language: go
+
+go:
+  - "1.16"
+
+env:
+  - GO111MODULE=on
+
+install:
+  - go get github.com/mattn/goveralls
+  - go mod download
+
+script:
+  - go test -v -covermode=count -coverprofile=c.out .
+  - $GOPATH/bin/goveralls -coverprofile=c.out -service=travis-ci
